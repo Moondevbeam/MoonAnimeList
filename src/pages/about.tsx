@@ -1,13 +1,6 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 const AboutPage: React.FC = () => {
-  const router = useRouter();
-
-  const navigateToHomepage = () => {
-    router.push('/');
-  };
-
   return (
     <div className="container mx-auto py-8">
       <h1 className="text-2xl font-bold mb-4">Welcome to Tamashii</h1>
