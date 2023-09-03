@@ -42,10 +42,10 @@ const SearchBarWithResults: React.FC = () => {
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
         placeholder="Search anime"
-        className='px-8 py-2 text-xl rounded-xl text-black font-semibold'
+        className='px-12 py-3 text-xl rounded-2xl text-black font-semibold'
       />
       </div>
-      <div className="grid grid-cols-4 gap-4 mx-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 mx-4">
         {animeList.map((anime) => (
           <AnimeCard key={anime.id} anime={anime} onClick={() => console.log('Clicked', anime.title)} />
         ))}

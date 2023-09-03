@@ -6,10 +6,12 @@ import React from 'react'
 
 function index() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-grow">
       <Header/>
       <Banner/>
       <SearchBar/>
+      </div>
       <Footer/>
     </div>
   )
